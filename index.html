@@ -410,9 +410,10 @@ section { padding-block: 0; }
 @media (max-width: 1023px) {
   .pano .top { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 28px 0; }
   .pano .stage { height: auto; margin-top: 36px; }
-  .pano .world { position: relative; left: auto; width: auto; height: auto; max-width: 600px; margin: 0 auto; transform: none; display: flex; flex-direction: column; gap: 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .pano .world { position: relative; left: auto; width: auto; height: auto; margin: 0; transform: none; display: flex; flex-direction: column; gap: 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
   .pano .band { display: block; height: 290px; }
   .pano .card, .pano .lane, .pano .foot { position: static; width: auto; }
+  .pano .card { max-width: 600px; }
   .pano .lane-you { margin-top: 10px; }
   .pano .tagline { transform: translateX(-50%); }
   .pano .tagline b { display: none; }
@@ -909,7 +910,7 @@ window.EW = {
         t.style.left = r.d.lab[0] + "px"; t.style.top = r.d.lab[1] + "px";
       } else {
         g.x = bd.x + r.m.x * bd.w; g.y = bd.y + r.m.y; g.sx = r.m.sx * bd.w; g.sy = r.m.sy;
-        g.x0 = g.x; g.y0 = g.y; g.x3 = bd.x + bd.w / 2; g.y3 = bd.y + bd.h + 8;
+        g.x0 = g.x; g.y0 = g.y; g.x3 = card.x + card.w / 2; g.y3 = bd.y + bd.h + 8;
         g.x1 = g.x0; g.y1 = g.y0 + (g.y3 - g.y0) * 0.55; g.x2 = g.x3; g.y2 = g.y3 - 50;
         t.style.left = (band.offsetLeft + r.m.x * bd.w) + "px"; t.style.top = (band.offsetTop + r.m.y + 2.3 * r.m.sy + 4) + "px";
       }
