@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy · Eyewall</title>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #000000; --surface: #0b0b0c; --line: #232427;
+  --fg: #ffffff; --mute: #959ca5; --flag: #cfa872;
+  --sans: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans", sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) { color-scheme: light; --bg: #ffffff; --surface: #f6f6f7; --line: #e1e2e5; --fg: #000000; --mute: #535a63; --flag: #96682a; }
+}
+:root[data-theme="light"] { color-scheme: light; --bg: #ffffff; --surface: #f6f6f7; --line: #e1e2e5; --fg: #000000; --mute: #535a63; --flag: #96682a; }
+* { box-sizing: border-box; }
+html { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+.wrap { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 72px; }
+.back { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mute); text-decoration: none; }
+h1 { font-weight: 400; letter-spacing: -0.02em; font-size: clamp(2rem, 5vw, 2.8rem); margin: 28px 0 8px; }
+h2 { font-weight: 400; letter-spacing: -0.01em; font-size: 1.3rem; margin: 40px 0 10px; }
+p, li { color: var(--mute); max-width: 65ch; }
+p strong, li strong { color: var(--fg); font-weight: 400; }
+ul { padding-left: 1.2em; }
+.meta { font-family: var(--mono); font-size: 0.78rem; color: var(--mute); }
+.draft { border: 1px solid var(--flag); color: var(--flag); border-radius: 10px; padding: 12px 16px; font-size: 0.9rem; margin-top: 20px; }
+footer { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 20px; font-size: 0.82rem; color: var(--mute); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← Eyewall</a>
+  <h1>Privacy notice</h1>
+  <p class="meta">Last updated 30 October 2026</p>
+
+  <h2>Who we are</h2>
+  <p><strong>EYEWALL LTD</strong> (company number 17392661, registered in England and Wales, registered office 21 Pine Avenue, Smethwick, B66 1TH) is responsible for personal data described in this notice. Contact: saif@eyewall.co.uk.</p>
+
+  <h2>Visiting this website</h2>
+  <p>This website sets <strong>no cookies</strong>, runs <strong>no analytics or advertising trackers</strong> and loads no fonts or scripts from other companies. Our hosting provider keeps standard server logs, such as IP address and pages requested, for security and to keep the site running.</p>
+
+  <h2>When you email us</h2>
+  <ul>
+    <li><strong>What:</strong> your name, email address and whatever you choose to tell us.</li>
+    <li><strong>Why:</strong> to reply and, if you ask, to discuss a pilot. Our lawful basis is our legitimate interest in answering enquiries, or steps you ask us to take before a contract.</li>
+    <li><strong>Where:</strong> our email is hosted by Google Workspace.</li>
+    <li><strong>How long:</strong> up to 24 months after our last contact, unless we start working together.</li>
+  </ul>
+
+  <h2>Data in our analysis work</h2>
+  <p>When we analyse a live room for a client, we work with the room owner's consent and report at crowd level. A full notice covering this work, including what we collect, why, for how long, and your rights, will be published here before any client work begins.</p>
+
+  <h2>Your rights</h2>
+  <p>You can ask to see, correct or delete your personal data, or object to how we use it. Email saif@eyewall.co.uk. If you're unhappy with our answer, you can complain to the Information Commissioner's Office at ico.org.uk.</p>
+
+  <footer>EYEWALL LTD · Registered in England and Wales · Company number 17392661</footer>
+</div>
+</body>
+</html>
