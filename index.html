@@ -222,6 +222,12 @@ section { padding-block: 0; }
 .copy:hover { border-color: var(--fg); }
 .contact small { color: var(--mute); font-size: 0.86rem; }
 @media (max-width: 820px) { .pilot { grid-template-columns: minmax(0, 1fr); } }
+/* Founder */
+.founder { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 32px 64px; align-items: start; }
+.founder h2 { font-size: var(--step-3); margin: 18px 0 10px; }
+.founder .role { color: var(--mute); }
+.founder .story { font-size: 1.2rem; line-height: 1.55; max-width: 56ch; }
+@media (max-width: 820px) { .founder { grid-template-columns: minmax(0, 1fr); } }
 
 
 /* Stakeholder model */
@@ -645,6 +651,17 @@ section { padding-block: 0; }
         <div><h3>Crowds, not people</h3><p>We report on rooms and groups. We don't build or sell profiles of individuals.</p></div>
         <div><h3>Every call on the record</h3><p>Calls are dated before the outcome is known. We keep the misses alongside the hits.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="band" id="founder">
+    <div class="wrap founder">
+      <div>
+        <span class="label">Founder</span>
+        <h2>Mohammed Saif Ali</h2>
+        <p class="role">Founder &amp; Director, EYEWALL LTD</p>
+      </div>
+      <p class="story">I'm Saif, founder of Eyewall. The company starts from one observation: when a crowd turns on an organisation, the signs show up early, in the places people talk, long before the damage lands. We're building more than a listening tool: a system that brands, agencies and public bodies can shape around their own audience, and use to test a decision before they make it, whether that's a price rise, a new product, a partnership or a major announcement. I lead our research and product, and we're now in our pilot phase.</p>
     </div>
   </section>
 
